@@ -1,5 +1,5 @@
 # Windows Remote Desktop - choose your monitors
-JavaScript tool to allow you to pick some, or all, of your screens to use for RDP.
+🖥️ _JavaScript_ tool to allow you to pick some, or all, of your screens to use for RDP.
 
 Windows Remote Desktop - choose your monitors
 
