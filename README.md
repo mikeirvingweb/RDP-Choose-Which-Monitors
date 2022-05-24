@@ -1,9 +1,7 @@
-# RDP Choose Which Monitors
+# RDP - Choose Which Monitors
 🖥️ _JavaScript_ tool to allow you to pick some, or all, of your screens to use for `RDP`.
 
 Public link: [Windows Remote Desktop - choose your monitors](https://mikeirvingweb.github.io/RDP-Choose-Which-Monitors/)
-
-Windows Remote Desktop - choose your monitors
 
 ## How to use
 
