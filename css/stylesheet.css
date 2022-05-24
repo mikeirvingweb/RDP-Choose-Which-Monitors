@@ -1,0 +1,38 @@
+body {background-color: #512bd4; color: white; font-size: 20px; font-family: helvetica, verdana, arial, sans-serif; }
+
+#sectionMonitors, #sectionLoad, #sectionWhich, #sectionDownload {display: none;}
+
+.content {margin: auto; width:688px; }
+
+.screen-outer {margin-top: 100px; padding: 20px; border: 2px solid #958f8e; background-color: #bfbdc0; width: 644px; height: 364px }
+.screen-outer .screen {position: relative; padding: 20px; border: 2px solid #958f8e; background-image: linear-gradient(to top right, #001fe9, #9db0ff); width: 600px; height: 320px; text-align: center; }
+.screen-outer .screen .bottom {position: absolute; bottom: 0px; width: calc(100% - 40px); margin-bottom: 20px; }
+.screen-stand {margin: auto; width:360px; height: 150px; background: #bfbdc0; border: 2px solid #958f8e; border-radius: 200px 200px 100px 100px; }
+
+footer {font-size: 0.6em; text-align: center; margin: 10px; }
+footer a {color: white; }
+footer a:hover {color: white; }
+
+h1 {margin: 0.5em 0 1em 0; font-size: 1.2em; }
+h2 {margin: 1.5em 0 1em 0; font-size: 1.15em;}
+h3 {margin: 2em 0 1em 0; font-size: 1.1em;}
+
+em {color: #fff7b2; }
+
+a {text-decoration: underline; color: white; }
+a:hover {text-decoration: none; }
+
+ul {list-style-type: none; margin-block: 0; padding-inline: 0; }
+ul li {display: inline-block; margin: 0 10px; }
+
+select, input[type=file], button {margin-top: 1em; padding: 6px 10px; background-color: white; color: black; border: 1px solid #512bd4; font-weight: bold; }
+button:not(.backward) {background-color: #99f14a; float: right; }
+button:not(.backward):after {content: " >" }
+button.backward {background-color: #f3747d; float: left; }
+button.backward:before {content: "< " }
+
+.error {display: inline-block; background-color: #fced9c; color: #c00; padding: 4px 8px; font-size: 0.8em; border-radius: 6px; margin-top: 14px; }
+.error:empty {display: none; }
+.clear {display: block; clear: both;}
+
+.help {font-size: 0.8em; }
