@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Windows Remote Desktop - choose your monitors</title>
+		<meta name="Description" content="Pick some, or all, of your screens to use for RDP" />
+		<meta name="Keywords" content="remote desktop, rdp, windows, monitors, screens, pick, choose, which" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=yes" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="Author" content="Mike Irving - www.mike-irving.co.uk" />
+		<meta name="Copyright" content="&copy; 2022 Mike Irving" />
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<script src="js/scripts.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" /> 
+		<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+	</head>
+	<body>
+		<div class="page">
+			<section class="main">
+				<section class="content">
+					<section class="screen-outer">
+						<div class="screen">
+							<h1>Windows Remote Desktop - choose your monitors</h1>
+							
+							<section id="sectionStart">
+								<h2>Pick some, or all, of your screens to use for RDP.</h2>
+								<p>Instructions:</p>
+								<p class="help">Select your RDP file, and specify which displays you want to use.</p>
+								<p class="help">Your file will be processed by <em>JavaScript</em>, and will <em>never leave the browser</em>.</p>
+								<p></p>
+								<p class="help">Inspired by a 2020 blog post from <a href="https://www.hanselman.com/blog/how-to-remote-desktop-fullscreen-rdp-with-just-some-of-your-multiple-monitors"><em>Scott Hanselman</em></a>.</p>
+								<div class="bottom">
+									<div class="clear">
+										<button type="button" onclick="Start()">Get started</button>
+									</div>
+								</div>
+							</section>
+							
+							<section id="sectionMonitors">
+								<h2>Step 1: Monitors</h2>
+								<p>How many monitors do you have?</p>
+								<select id="selectMonitors">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3" selected>3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+								<div class="bottom">
+									<div class="clear">
+										<button type="button" onclick="Confirm()">Confirm</button>
+										<button class="backward" onclick="Cancel()">Cancel</button>
+									</div>
+								</div>
+							</section>
+							
+							<section id="sectionLoad">
+								<h2>Step 2: Choose your RDP file</h2>
+								<p class="help">
+									File will be processed in your browser,<br>
+									and will not be uploaded anywhere.
+								</p>
+								<input type="file" accept=".rdp" id="uploadedFile">
+								<div class="bottom">
+									<button type="button" onclick="Load()">Load File</button>
+									<button class="backward" onclick="Cancel()">Cancel</button>
+									<label class="error" id="errorLoad"></label>
+								</div>
+							</section>
+							
+							<section id="sectionWhich">
+								<h2>Step 3: Which monitors would you like to use?</h2>
+								<ul id="monitorList"></ul>
+								<h3>Which screen is which?</h3>
+								<p class="help">To identify, press <em>Win + R</em> then type <em>desk.cpl</em> and press <em>return</em>.</p>
+								<div class="bottom">
+									<button onclick="Which()">Confirm</button>
+									<button class="backward" onclick="Cancel()">Cancel</button>
+									<label class="error" id="errorWhich"></label>
+								</div>
+							</section>
+							
+							<section id="sectionDownload">
+								<h2>Step 4: Download new RDP file</h2>
+								<p>You have selected monitor(s): <span id="selectedMonitors"></span></p>
+								<h3>All done</h3>
+								<p class="help">Click <em>'Download'</em> to download your modified file.<p>
+								<div class="bottom">
+									<button onclick="Download()">Download</button>
+									<button class="backward" onclick="Cancel()">Restart</button>
+								</div>
+							</section>
+						</div>
+					</section>
+					<section class="screen-stand">
+					</section>
+					<footer>
+						&copy; 2022 <a href="https://www.mike-irving.co.uk/">Mike Irving</a>. Source Code available on <a href="https://github.com/mikeirvingweb/">GitHub</a>.
+					</footer>
+				</section>
+			</section>
+		</div>
+	</body>
+</html>
